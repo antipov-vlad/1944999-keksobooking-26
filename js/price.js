@@ -25,7 +25,7 @@ slider.noUiSlider.on('update', (values) => {
 
 priceNight.value = '';
 
-priceNight.addEventListener('change', () => {
+priceNight.addEventListener('input', () => {
   slider.noUiSlider.set(priceNight.value);
   if (priceNight.value === '0') {
     priceNight.value = '';
